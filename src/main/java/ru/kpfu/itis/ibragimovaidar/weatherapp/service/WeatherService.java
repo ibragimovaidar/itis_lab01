@@ -36,7 +36,7 @@ public class WeatherService {
           .user(user.get())
           .requestDateTime(LocalDateTime.now())
           .build();
-      return Optional.of(weatherRequest);
+      return Optional.of(weatherRequestRepository.save(weatherRequest));
     }
     return Optional.empty();
   }
