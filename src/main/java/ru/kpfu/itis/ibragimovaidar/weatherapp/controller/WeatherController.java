@@ -1,7 +1,5 @@
 package ru.kpfu.itis.ibragimovaidar.weatherapp.controller;
 
-import java.util.List;
-import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.kpfu.itis.ibragimovaidar.weatherapp.dto.WeatherReportDto;
 import ru.kpfu.itis.ibragimovaidar.weatherapp.dto.WeatherRequestDto;
 import ru.kpfu.itis.ibragimovaidar.weatherapp.service.WeatherService;
+
+import java.util.List;
+import java.util.Optional;
 
 @RequiredArgsConstructor
 @RestController
