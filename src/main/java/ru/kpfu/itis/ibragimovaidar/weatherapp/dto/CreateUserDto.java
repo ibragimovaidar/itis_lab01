@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class CreateUserDto {
 
-  private String id;
+  private Long id;
 
   @NotNull
   @Email

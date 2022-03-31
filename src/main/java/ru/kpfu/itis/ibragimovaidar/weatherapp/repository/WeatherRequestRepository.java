@@ -9,6 +9,5 @@ public interface WeatherRequestRepository extends JpaRepository<WeatherRequest, 
 
   Page<WeatherRequest> findAll(Pageable pageable);
   Page<WeatherRequest> findAllByUser_Username(Pageable pageable, String username);
-  Page<WeatherRequest> findAllByCityContains(Pageable pageable, String city);
   Page<WeatherRequest> findAllByCity(Pageable pageable, String city);
 }
